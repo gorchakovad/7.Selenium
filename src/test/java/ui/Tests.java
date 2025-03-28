@@ -45,7 +45,7 @@ public class Tests {
 
     @Test
     @DisplayName("Infinite scroll")
-    void infiniteScrollTests() throws InterruptedException {
+    void infiniteScrollTests() {
         driver.get(INFINITE_SCROLL_URL);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
         List<WebElement> paragraphs = driver.findElements(By.xpath("//p[@class='lead']"));
